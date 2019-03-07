@@ -2,13 +2,14 @@ package com.bank.driver;
 
 import java.util.Scanner;
 
+
 import com.bank.dao.Login;
 import com.bank.dao.Register;
 import com.bank.dao.Tran;
 import com.bank.daoimpl.Loginimpl;
 import com.bank.daoimpl.Registerimpl;
 import com.bank.daoimpl.Trans;
-import com.bank.modal.User;
+
 
 public class App {
 	public static Scanner sc = new Scanner(System.in);
@@ -26,9 +27,8 @@ public void disp(Long aadhar, Long balance){
 		t.withdrawl(adar,bal);
 		break;
 	case 3:
-		User u=new User();
-		System.out.println("bal is "+u.getBal());
-		System.out.println("thank u");
+	
+		t.baldisp(adar,bal);
 		break;
 	}
 }

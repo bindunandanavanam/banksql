@@ -1,9 +1,9 @@
 package com.bank.daoimpl;
 
 import java.sql.Connection;
+
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Scanner;
 
@@ -75,6 +75,27 @@ User u=new User();
 		// TODO Auto-generated catch block
 		e.printStackTrace();
 	}
+		
+	}
+	@Override
+	public void baldisp(long aadhar, long balance) {
+		// TODO Auto-generated method stub
+	/*	try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/bindu","root","root");
+			PreparedStatement ps= con.prepareStatement("select bal from user where aadhar=?");
+			ps.setLong(1,aadhar);*/
+			System.out.println("your balance is "+balance);
+			System.out.println("thank u");
+			//ps.executeQuery();
+			
+	/*}catch (ClassNotFoundException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	} catch (SQLException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}*/
 		
 	}
 
